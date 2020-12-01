@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<empleados status = "ok">
+     <registro manager = "101">
+        <nombre>Joe Paul</nombre>
+      <puesto>CEO</puesto>
+     </registro>
+ <registro manager = "102">
+   <nombre>Tasha Smith</nombre>
+   <puesto>Finance Manager</puesto>
+ </registro>
+</empleados>
