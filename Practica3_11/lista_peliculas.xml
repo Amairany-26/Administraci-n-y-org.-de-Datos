@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Peliculas>
+  <pelicula peli_id="5467">
+    <Titulo>La Campaña</Titulo>
+    <Año>2012</Año>
+    <Genero>Drama</Genero>
+    <Clasificacion>B</Clasificacion>
+  </pelicula>
+</Peliculas>
