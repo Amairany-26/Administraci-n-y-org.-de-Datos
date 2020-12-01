@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+  <pelicula peli_id="1">
+    <titulo>La bella y la bestia </titulo>
+    <año>1990</año>
+    <genero>Infantil</genero>
+    <clasificacion>A</clasificacion>
+  </pelicula>
+<pelicula peli_id="2"><titulo>Coco</titulo><año>2017</año><genero>Infantil</genero><clasificacion>A</clasificacion></pelicula><pelicula peli_id="3"><titulo>IT 2</titulo><año>2018</año><genero>Terror</genero><clasificacion>B</clasificacion></pelicula><pelicula peli_id="4"><titulo>Son Como Niños</titulo><año>2010</año><genero>Comedia</genero><clasificacion>B</clasificacion></pelicula><pelicula peli_id="5"><titulo>The Two popes</titulo><año>2019</año><genero>Comedia</genero><clasificacion>A</clasificacion></pelicula><pelicula peli_id="6"><titulo>The Two popes</titulo><año>2019</año><genero>Documental</genero><clasificacion>A</clasificacion></pelicula></peliculas>
