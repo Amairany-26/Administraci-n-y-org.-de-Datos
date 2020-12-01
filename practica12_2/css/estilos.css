@@ -1,0 +1,37 @@
+.ct-series-a .ct-bar {
+  /* Color de las barras de la primer serie*/
+  stroke: goldenrod;
+  /* El ancho de las barras */
+  stroke-width: 30px;
+  
+}
+.ct-series-b .ct-bar {
+  /* Color de las barras de la segunda serie */
+  stroke: royalblue;
+  /* El ancho de las barras */
+  stroke-width: 25px;
+  
+}
+.temp-box{
+  width: 50px;
+  
+}
+.temp{
+  display: inline-flex;
+}
+.max{
+background-color: goldenrod;
+
+}
+.min{
+  background-color: royalblue;
+}
+.subt{
+  display: block;
+  color: blueviolet;
+  
+  font-size: large;
+}
+.centro{
+  text-align: center;
+}
