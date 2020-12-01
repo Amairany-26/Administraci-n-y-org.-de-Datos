@@ -1,0 +1,69 @@
+ <DOCTYPE html>
+ <html lang="es">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cuarta gráfica de representación de datos</title>
+    <link rel="stylesheet" href="./css/chartist.min.css">
+    <script src="./js/chartist.min.js"></script>
+</head>
+
+<body>
+   <div class="ct-chart ct-minor-seventh"></div>
+
+   <script>
+  // Configuracion de datos
+      var datos = {
+
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
+
+        series: [
+            { name: 'serie-1', data: [5, 2, -4, 2, 0, -2, 5, -3] },
+            { name: 'serie-2', data: [4, 3, 5, 3, 1, 3, 6, 4] },
+            { name: 'serie-3', data: [2, 4, 3, 1, 4, 5, 3, 2] }
+         ]
+};
+// Configuracion de opciones
+   var opciones = {
+      fullWidth: true,
+      // Dentro de las opciones de la serie,
+     // se puede usar los nombres de la serie para especificar
+    // la configuración que solo se usará en la serie específica
+    series: {
+       'serie-1': {
+           lineSmooth: Chartist.Interpolation.step()
+         },
+         'serie-2': {
+          lineSmooth: Chartist.Interpolation.simple(),
+          showArea: true,
+
+         },
+         'serie-3': {
+             lineSmooth: Chartist.Interpolation.none(),
+             showPoint: false
+          }
+      }
+};
+// Configuracion del objeto con opciones responsivas
+// ¡Incluso puedes usar modificaciones de configuración
+// responsivas para personalizar aún más la configuración de tus series!
+    var opcionesResponsive = [
+        ['screen and (max-width: 640px)', {
+            series:{
+                'serie-1': {lineSmooth: Chartist.Interpolation.none()},
+                'serie-2': {lineSmooth: Chartist.Interpolation.none(),showArea: true},
+                'serie-3': {lineSmooth: Chartist.Interpolation.none(),showPoint: true}
+           }
+       }
+]
+];
+
+
+  new Chartist.Line('.ct-chart', datos, opciones, opcionesResponsive);
+ </script>
+ <div></div>
+
+</body>
+
+</html>

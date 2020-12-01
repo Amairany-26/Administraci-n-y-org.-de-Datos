@@ -1,0 +1,35 @@
+<DOCTYPE html>
+
+   <html lang="es">
+       <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Mi primera gráfica de representación de datos</title>
+           <link rel="stylesheet" href="./CSS/chartist.min.css">
+           <script src="./JS/chartist.min.js"></script>
+       </head>
+       <body>
+           <div class="ct-chart ct-perfect-fourth"></div>
+           <script>
+            var datos = {
+                // Creamos una matriz de 'etiquetas'
+                //que puede contener cualquier tipo de valores.
+
+                labels: ['Lun', 'Mar', 'Mie', 'Jue', 'Vie'],
+                // Nuestro arreglo de series que puede contener objetos de series
+                // o en este caso una serie en un arreglo de datos
+                // dicho de otra forma un arreglo dentro de un arreglo [[]]
+                series: [ //arreglo de series
+                    [5, 2, 4, 2, 0] //serie1
+                ] //fin arreglo de series
+            }; //fin datos
+
+            // Creamos un nuevo objeto de tipo gráfica de líneas
+            //donde como primer parámetro pasamos un selector
+            //que se está resolviendo en nuestro elemento contenedor de gráficos (div).
+            // El segundo parámetro es el objeto de datos.
+            new Chartist.Line('.ct-chart', datos);
+        </script>
+        <div></div>
+    </body>
+</html>

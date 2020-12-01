@@ -1,0 +1,56 @@
+ <DOCTYPE html>
+ <html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mi tercera gráfica de representación de datos</title>
+   <link rel="stylesheet" href="./CSS/chartist.min.css">
+   <script src="./JS/chartist.min.js"></script>
+</head>
+
+<body>
+    <div class="ct-chart ct-minor-seventh"></div>
+     
+    <script>
+          var datos = {
+
+               labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov',
+'Dic'],
+
+      series: [
+           [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
+           [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
+
+    ]
+};
+      var opciones = {
+       seriesBarDistance: 15
+ };
+
+   var opcionesResponsive = [
+   ['screen and (min-width: 641px) and (max-width: 1024px)', {
+       seriesBarDistance: 10,
+       axisX: {
+          labelInterpolationFnc: function (value) {
+             return value;
+       }
+  }
+}],
+['screen and (max-width: 640px)', {
+     seriesBarDistance: 5,
+     axisX: {
+        labelInterpolationFnc: function (value) {
+            return value[0];
+         }
+      }
+  }]
+];
+
+new Chartist.Bar('.ct-chart', datos, opciones, opcionesResponsive);
+</script>
+<div></div>
+
+</body>
+
+</html>
